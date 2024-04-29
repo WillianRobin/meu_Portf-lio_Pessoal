@@ -4,32 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
     <title>Portfólio Willian</title>
 </head>
 
 <body>
-    <header>
-        <a href="./Páginas/pagina01.html">Objetivos</a>
-        <a href="./Páginas/pagina02.html">Projetos</a>
-        <a href="./Páginas/pagina03.html">Contatos</a>
-        <h1>Meu Portfólio</h1>
-
+    <header class="header">
+        <a href="#" class="logo"><span>Will</span>ian Robin C. M.</a>
+        <nav class="navbar">
+            <a href="#" class="link">Objetivos</a>
+            <a href="#" class="link">Projetos</a>
+        </nav>
+        <a href="#" class="contato">Contatos</a>
     </header>
-    <main>
-        <h2>Sobre Mim</h2>
-        <p>Meu nome é Willian Robin, tenho 19 anos,possuo o ensino médio completo, mas universidade
-            ainda não. Planejo ser programador dentro devárias áreas como profissão(Sofware,Web, Game,
-            Mobile,etc.). Tenho experiência de trabalho como vendedor</p>
-        <br><br>
-        <img src="./img/computador.jpg" alt="computador">
-        <br><br>
-        
-    </main>
-    <div class="azulescuro">.</div>
-    <footer>
-        <P style="text-align: center;">Willian</P>
 
+    <main class="me">
+        <div class="sobre">
+            <h2>Olá</h2>
+            <h1>Eu sou <span>Willian <br></span></h1>
+            <p> tenho 19 anos, estou fazendo curso de Programção web</p>
+        </div>
+        <div class="img">
+            <img src="./img/eu.png" alt="">
+        </div>
+    </main>
+
+    <section class="form">
+        <h2 class="form-contato">Entre em contato <span>Comigo</span></h2>
+        <form action="#">
+            <div class="box">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+            </div>
+            <div class="box">
+                <input type="number" placeholder="Seu Número de Telefone" required>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Menssagem"></textarea>
+            <input type="submit" value="Enviar Menssagem" class="submit">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle' style='color:#0000ff'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp' style='color:#00ff00'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square' style='color:#005fff'></i></a>
+            <a href="#"><i class='bx bxl-github' style='color:#75b5fa'></i></a>
+        </div>
     </footer>
 </body>
 

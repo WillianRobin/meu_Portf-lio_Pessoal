@@ -1,85 +1,215 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    color: #F2F2F2;
-}
-header :visited {
-    color: #3071F2;
-}
-header :link {
-    color: #3071F2;
-}
-header a:link {
-    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
-header {
-    background-color: #011826;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 12%;
+    background: rgb(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
 }
 
-body {
-    background-color: #0D0D0D;
-    margin: 0 0 60px;
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-h1 {
-    padding-top: 20px;
-    font-size: 60px;
-    padding-left: 100px;
-    color: #3071F2;
+.logo:hover {
+    color: blue;
+    text-shadow: 0 0 25px blue,
+        0 0 25px blue;
+    transform: scale(1.1);
 }
 
-h2 {
-    text-align: center;
-    background-color: #033859;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-p {
-    font-size: 20px;
-    padding-top: 2px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-img {
-    height: 50vh;
-    margin-left: 100px;
-    border: 2px solid black;
-    border-radius:50px;
+span {
+    color: blue;
 }
 
 a {
-    float: right;
-    padding-top: 40px;
-    padding-right: 20px;
-    font-size: 20px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    margin-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+
+
 }
 
-
-
-.azulescuro {
-    background-color: #033859;
-    color: #033859;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-footer {
-    background-color: #011826;
-    padding-top: 40px;
-    padding-bottom: 100%;
-    padding-right: 100%;
-    position: fixed;
-
+.navbar a:hover,
+.navbar a:active {
+    color: blue;
+    border-bottom: 3px solid blue;
 }
 
 .contato {
-    float: left;
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-.numero {
-    float: right;
+.contato:hover {
+    background-color: blue;
+    box-shadow: 0 0 25px blue;
+    color: white;
+}
+
+.me {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 30px 12% 0
+}
+
+.sobre {
+    max-width: 800px;
+    
+}
+
+.sobre h1 {
+    font-size: 42px;
+}
+
+.sobre h2 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+img {
+    border-radius: 50px;
+    height: 400px;
+
+}
+
+.form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+
+}
+
+.form form {
+    max-width: 50em;
+    margin: 1em auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.form form .box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form form,
+.box input,
+.form form textarea {
+    justify-content: center;
+    width: 100%;
+    padding: 1em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    resize: none;
+    margin-top: 1rem;
+}
+
+section {
+    justify-content: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+    border-top: 2px solid blue;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: white;
+    border: 2px solid blue;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px blue, 0 0 10px blue;
+    transition: 0.3s ease;
+}
+
+footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    color: blue;
+    border: 2px solid blue;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px
+}
+
+.submit {
+    background-color: white;
+    text-decoration: none;
+    color: blue;
+    border: 0;
+
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    box-shadow: 0px 5px 5px black;
+}
+
+.submit:hover {
+
+    color: black;
+    background-color: rgba(0, 0, 255, 0.900);
+
 }
